@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 class Student
 {
@@ -7,23 +7,22 @@ private:
  string name;
 public:
  // Constructor
-5
  Student(int r, string n)
-{
- rollNo = r;
- name = n;
- cout << "Student object created" << endl;
+ {
+  rollNo = r;
+  name = n;
+  cout<<"Student object created"<<endl;
  }
  // Member function
  void display()
  {
- cout << "Roll Number: " << rollNo << endl;
- cout << "Name: " << name << endl;
+  cout<<"Roll Number: "<<rollNo<<endl;
+  cout<<"Name: "<<name<<endl;
  }
  // Destructor
  ~Student()
  {
- cout << "Student object destroyed" << endl;
+  cout << "Student object destroyed" << endl;
  }
 };
 int main()
