@@ -1,7 +1,7 @@
-#include <iostream> 
-#include <vector>    
-#include <memory> 
-#include <string>  
+#include<iostream> 
+#include<vector>    
+#include<memory> 
+#include<string>  
 using namespace std; 
 /**  
  * @brief Observer interface. 
