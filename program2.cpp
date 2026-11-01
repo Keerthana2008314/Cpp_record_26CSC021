@@ -1,10 +1,9 @@
-#include <iostream> 
+#include<iostream> 
 using namespace std; 
 class Shape 
 { 
 public:    
- virtual float area() = 0;
- // Pure virtual function 
+ virtual float area() = 0; // Pure virtual function 
 };
 class Circle : public Shape 
 { 
@@ -57,10 +56,10 @@ int main()
    Triangle t(10, 8);    
    Shape *ptr;    
    ptr = &c;     
-   cout << "Area of Circle: " << ptr->area() << endl;    
+   cout<<"Area of Circle: "<<ptr->area()<<endl;    
    ptr = &r;    
-   cout << "Area of Rectangle: " << ptr->area() << endl;      
+   cout<<"Area of Rectangle: "<<ptr->area()<<endl;      
    ptr = &t;    
-   cout << "Area of Triangle: " << ptr->area() << endl;   
+   cout<<"Area of Triangle: "<<ptr->area()<<endl;   
    return 0;
 } 
