@@ -1,30 +1,30 @@
-#include <iostream> 
-#include <stack> 
-#include <queue> 
-#include <chrono> 
+#include<iostream> 
+#include<stack> 
+#include<queue> 
+#include<chrono> 
 using namespace std; 
 using namespace chrono; 
 template <class T> 
 class MyStack 
 { 
 private: 
-    T data[10000];  
-    int top; 
+ T data[10000];  
+ int top; 
 public:  
-    MyStack()   
-    {       
-       top = -1; 
-    }   
-    void push(T value)   
-    {      
-      if (top < 9999)          
-         data[++top] = value;  
-    }    
-    void pop()   
-   {        
-      if (top >= 0)        
-        top--;    
-   } 
+ MyStack()   
+ {       
+   top = -1; 
+ }   
+void push(T value)   
+ {      
+   if (top < 9999)          
+   data[++top] = value;  
+ }    
+ void pop()   
+ {        
+   if (top >= 0)        
+   top--;    
+ } 
 }; 
 template <class T> 
 class MyQueue 
